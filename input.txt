@@ -1,0 +1,49 @@
+CPP, Java, Python
+---------------------------------------
+
+5
+6
+Jersey Anjing Sporty
+95000
+11
+Jersey
+Polyester
+Merah
+L
+PawAthlete
+7
+Dasi Kucing Elegan
+30000
+20
+Aksesoris
+Sutra
+Hitam
+S
+MeowTux
+8
+Rompi Anjing Tactical
+120000
+7
+Rompi
+Canvas
+Coklat
+XL
+GuardDog
+9
+Gaun Kucing Princess
+105000
+6
+Pakaian
+Satin
+Pink
+M
+RoyalPaws
+10
+Jaket Anjing Gaulll
+400000
+10
+Jaket
+Corduroy
+Coklat
+L
+Carhart
