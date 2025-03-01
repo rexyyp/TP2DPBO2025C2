@@ -6,6 +6,7 @@ Saya Rexy Putra Nur Laksana dengan NIM 2309578 mengerjakan TP 2 dalam mata kulia
 
 ## Diagram
 
+
 ## Desain Pemrograman
 Terdiri dari 3 class, yaitu **PetShop**, **Aksesoris** dan **Baju**, PetShop adalah orangtua dari Aksesoris dan Aksesoris adalah orangtua dari Baju.
 
@@ -31,14 +32,14 @@ Program dimulai dengan mengimpor kelas Baju dari file Baju.py, lalu menginisiali
 ## Dokumentasi
 
 ### CPP
-![Dokumentasi](CPP/Screenshoot/ss_cpp.png)
+![Dokumentasi](CPP/Screenshot/ss_cpp.png)
 
 ### PYTHON
-![Dokumentasi](PYTHON/Screenshoot/ss_python.png)
+![Dokumentasi](PYTHON/Screenshot/ss_python.png)
 
 ### JAVA
-![Dokumentasi](JAVA/Screenshoot/ss_java.png)
+![Dokumentasi](JAVA/Screenshot/ss_java.png)
 
 ### PHP
-![Dokumentasi](PHP/Screenshoot/ss_php.png)
+![Dokumentasi](PHP/Screenshot/ss_php.png)
 
