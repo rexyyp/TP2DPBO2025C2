@@ -3,11 +3,12 @@
 
   $list_produk = array();
 
-  $baju1 = new Baju(1, "Baju Anjing", 50000, 10, "Pakaian", "Katun", "Merah", "M", "PetStyle");
-  $baju2 = new Baju(2, "Baju Kucing", 45000, 8, "Pakaian", "Polyester", "Biru", "S", "FurFashion");
-  $baju3 = new Baju(3, "Rompi Kucing", 60000, 5, "Rompi", "Denim", "Hitam", "L", "PawWear");
-  $baju4 = new Baju(4, "Jaket Anjing", 75000, 7, "Jaket", "Wool", "Coklat", "XL", "DogStyle");
-  $baju5 = new Baju(5, "Hoodie Kucing", 70000, 6, "Hoodie", "Fleece", "Abu-abu", "M", "CatSwag");
+ $baju1 = new Baju(1, "Baju Anjing", 50000, 10, "Pakaian", "Katun", "Merah", "M", "PetStyle", "Images/1.jpg");
+ $baju2 = new Baju(2, "Baju Kucing", 45000, 8, "Pakaian", "Polyester", "Biru", "S", "FurFashion", "Images/2.jpg");
+ $baju3 = new Baju(3, "Rompi Kucing", 60000, 5, "Rompi", "Denim", "Hitam", "L", "PawWear", "Images/3.jpg");
+ $baju4 = new Baju(4, "Jaket Anjing", 75000, 7, "Jaket", "Wool", "Coklat", "XL", "DogStyle", "Images/4.jpg");
+ $baju5 = new Baju(5, "Hoodie Kucing", 70000, 6, "Hoodie", "Fleece", "Abu-abu", "M", "CatSwag", "Images/5.jpg");
+
 
   array_push($list_produk, $baju1);
   array_push($list_produk, $baju2);
@@ -31,7 +32,7 @@
             color: #333;
         }
         table {
-            width: 80%;
+            width: 60%;
             margin: 20px auto;
             border-collapse: collapse;
             background-color: #fff;
@@ -43,10 +44,10 @@
         th {
             background-color: #007BFF;
             color: white;
-            padding: 10px;
+            padding: 5px;
         }
         td {
-            padding: 8px;
+            padding: 5px;
             text-align: left;
         }
         tr:nth-child(even) {
@@ -55,6 +56,11 @@
         tr:hover {
             background-color: #ddd;
         }
+
+        img {
+            width: 100px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +68,7 @@
     <table>
         <tr>
             <th>ID</th>
+            <th>Foto</th>
             <th>Nama</th>
             <th>Harga</th>
             <th>Stok</th>
@@ -74,6 +81,9 @@
         <?php foreach ($list_produk as $produk) { ?>
             <tr>
                 <td><?php echo $produk->getId(); ?></td>
+                <td>
+                    <img src="<?php echo $produk->getFoto(); ?>" alt="<?php echo $produk->getNama(); ?>">
+                </td>
                 <td><?php echo $produk->getNama(); ?></td>
                 <td><?php echo $produk->getHarga(); ?></td>
                 <td><?php echo $produk->getStok(); ?></td>

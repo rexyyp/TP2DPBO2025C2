@@ -7,9 +7,9 @@ class Aksesoris extends PetShop
   private $bahan = "";
   private $warna = "";
 
-  public function __construct($id, $nama, $harga, $stok, $jenis, $bahan, $warna)
+  public function __construct($id, $nama, $harga, $stok, $foto, $jenis, $bahan, $warna)
   {
-    parent::__construct($id, $nama, $harga, $stok);
+    parent::__construct($id, $nama, $harga, $stok, $foto);
     $this->jenis = $jenis;
     $this->bahan = $bahan;
     $this->warna = $warna;
